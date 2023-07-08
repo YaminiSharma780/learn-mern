@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- Adding External CSS -->
+    <link rel="stylesheet" href="../CSS/form.css" />
+    <!-- Adding Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Directory/Images/favicon.PNG"
+    />
+  </head>
+  <body style="background-color: white">
+    <!-- LOGO -->
+    <div style="background-color: aquamarine; height: 200px; width: 200px">
+      <a href="#para1">
+        <img
+          src="../Directory/Images/logo.PNG"
+          alt="Royal Technology"
+          height="100px"
+          width="100px"
+        />
+      </a>
+    </div>
+    <!-- FORM -->
+    <div style="background-color: grey" id="outline">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <form>
+          <!-- Section 1 -->
+          <section>
+            <label for="name">Enter Name</label>
+            <br />
+            <input type="text" placeholder="firstname lastname" />
+            <br /><br />
+            <label for="email">Enter Email</label>
+            <br />
+            <input type="email" placeholder="example@abc.com" />
+            <br /><br />
+            <label for="password">Enter Password</label>
+            <br />
+            <input type="password" placeholder="" />
+            <br /><br />
+            <label for="phone">Enter Phone Number</label>
+            <br />
+            <input type="tel" pattern="" placeholder="+91 1234567890" />
+            <br /><br />
+          </section>
+          <!-- Section 2 -->
+          <section>
+            <!-- Date Selector -->
+            <label for="doblabel">Date of Birth</label>
+            <br />
+            <input type="date" name="dobdate" id="dobdate" />
+            <br /><br />
+            <label for="college">College</label>
+            <br />
+            <!-- Drop Down -->
+            <select name="collegetype" id="collegetype">
+              <option value="">Choose your college type</option>
+              <option value="IIT">IIT</option>
+              <option value="NIT">NIT</option>
+              <option value="IIIT">IIIT</option>
+              <option value="Government">Government</option>
+              <option value="Private">Private</option>
+            </select>
+            <br /><br />
+            <label for="experience">Experience in years </label>
+            <br />
+            <input
+              type="number"
+              name="experience"
+              id="experience"
+              min="0"
+              max="30"
+              value="0"
+            />
+            <br /><br />
+            <!-- Radio Button -->
+            <label for="gender">Select Gender</label>
+            <br />
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="lgbtq+" />
+            <label for="lgbtq+">LGBTQ+</label>
+            <br /><br />
+          </section>
+          <!-- Section 3 -->
+          <section>
+            <!-- Check Box -->
+            <label for="age">Select your language</label>
+            <br />
+            <input type="checkbox" name="skill" id="c" />
+            <label for="c">C</label>
+            <input type="checkbox" name="skill" id="c++" />
+            <label for="c++">C++</label>
+            <input type="checkbox" name="skill" id="java" />
+            <label for="java">Java</label>
+            <input type="checkbox" name="skill" id="python" />
+            <label for="python">Python</label>
+            <br /><br />
+            <label for="phone">Link your Github Profile</label>
+            <br />
+            <input
+              type="url"
+              pattern="https://github.com/*"
+              placeholder="https://github.com/"
+            />
+            <br /><br />
+            <!-- File Upload only Image -->
+            <label for="resume">Upload Profile Photo</label>
+            <br />
+            <input type="file" name="profile" id="profile" accept="image/*" />
+            <br /><br />
+            <!-- Text Area -->
+            <label for="textarea">Tell us about yourself in few words</label>
+            <br />
+            <textarea
+              name="des"
+              id="des"
+              cols="30"
+              rows="5"
+              autocapitalize=""
+            ></textarea>
+          </section>
+          <br /><br />
+          <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+    <!-- PARA 1 -->
+    <div style="background-color: lightpink">
+      <section>
+        <p id="para1">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quod
+          ipsa cumque suscipit impedit eaque, praesentium accusantium cupiditate
+          eum ullam id mollitia omnis, hic vitae consectetur qui architecto iste
+          ad adipisci blanditiis neque ea facilis? Quibusdam, vero ea earum, est
+          cumque deserunt eum blanditiis sint nostrum quis vitae perspiciatis.
+          Quasi voluptatibus necessitatibus earum a, id odit at porro fugit
+          nemo, aperiam aliquam omnis minus ea hic sunt atque. Inventore enim
+          mollitia a consequuntur voluptates necessitatibus quidem! Quia, fuga
+          quae laudantium unde aperiam iste provident sunt dolor, magnam neque
+          blanditiis aliquam reiciendis rerum obcaecati temporibus minima rem
+          libero. Unde, libero cupiditate.
+        </p>
+      </section>
+    </div>
+    <!-- Image ROW COLUMN for loading=lazy/eager -->
+    <div class="row" style="background-color: lightskyblue">
+      <div class="column">
+        <img src="../Directory/Images/painting2.jpeg" alt="" loading="lazy" />
+      </div>
+      <div class="column">
+        <img src="../Directory/Images/painting2.jpeg" alt="" loading="eager" />
+      </div>
+      <br /><br />
+    </div>
+    <!-- AUDIO & VIDEO -->
+    <div>
+      <audio
+        controls
+        src="../Directory/AudioVideo/audio1.mp3"
+        type="audio/mp3">
+      </audio>
+      <video
+        controls
+        src="../Directory/AudioVideo/video1.mp4"
+        type="video/mp4"
+        height="500px"
+        width="600px">
+      </video>
+    </div>
+    <!-- iFRAME -->
+    <div>
+      <iframe
+        src="notes1.html"
+        width="600px"
+        height="400px"
+        frameborder="0"
+      ></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/ZmtLzRJh8n8?autoplay=1&mute=1"
+        height="400px"
+        width="600px"
+      ></iframe>
+    </div>
+    <!-- FOOTER -->
+    <div style="background-color:lavender">
+      <footer>
+        <p>Copyright 2023 Royal Technology. All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

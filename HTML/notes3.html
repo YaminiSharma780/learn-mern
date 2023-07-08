@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/notes3.css" />
+    <title>Learn CSS 2</title>
+  </head>
+  <body>
+    <!-- CSS Position Property -->
+    <div class="container">
+      <img
+        class="img1"
+        src="../Directory/Images/random-image1.avif"
+        alt="Rose"
+      />
+      <img
+        class="img2"
+        src="../Directory/Images/random-image2.jpg"
+        alt="Minions"
+      />
+      <img
+        class="img3"
+        src="../Directory/Images/random-image3.jpg"
+        alt="Mountain"
+      />
+      <img
+        class="img4"
+        src="../Directory/Images/random-image4.jpg"
+        alt="Fire"
+      />
+      <img
+        class="img5"
+        src="../Directory/Images/random-image5.jpg"
+        alt="Namaste"
+      />
+    </div>
+    <!-- Sticky Container -->
+    <div class="stickyClass">
+      <div class="stickyBox">
+        <h2>
+          I am very sticky with {position: sticky; top: 200px; left: 950px;}
+        </h2>
+      </div>
+    </div>
+    <!-- CSS Pixels -->
+    <!-- Parent Child Container -->
+    <div class="parent">
+      <div class="child">Child</div>
+    </div>
+    <!-- Random Div for ViewPort -->
+    <div class="randomDiv">Learning View Port in CSS</div>
+    <!-- PX vs VW vs EM -->
+    <div class="wrapper">
+      <div class="box px">
+        I have 40px font-size [Reason: font-size of warpper is 20px hence mine
+        2em -> 20px*2=40px]
+      </div>
+      <div class="box vw">
+        I am 10vw wide with 20px padding [Reason: padding of wrapper is 10px
+        hence mine 2em -> 10px*2=20px but I am 40px with unknown reasons]
+      </div>
+      <div class="box em">
+        I am 10em wide with font-size=32px [Reason: rem prefix will mutiply
+        itself with default font-size of body which is 16px]
+      </div>
+    </div>
+    <!-- Want to check position:absolute -->
+    <div
+      style="
+        background-color: lightblue;
+        border: 3px solid blue;
+        height: 100px;
+        width: 200px;
+        position: absolute;
+        top: 900px;
+        left: 710px;
+        font: 20px bold;
+      "
+    >
+      I am very absolute with {position:absolute};
+    </div>
+    <!-- Want to check position:sticky -->
+    <div class="stickyBox">
+        <h2>
+          I am independent sticky with {position: sticky; top: 200px; left: 950px;}
+        </h2>
+    </div>
+    <div style="height: 5000px; width: 100%; background-color: khaki;">
+    </div>
+  </body>
+</html>

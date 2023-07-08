@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- To convert binary file received from browser to UTF-8 -->
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML</title>
+  </head>
+  <body style="background-color: lightpink;">
+    <center>
+      <h2>Learn HTML</h2>
+    </center>
+    <div>
+      <h1>h1 Heading</h1>
+      <h2>h2 Heading</h2>
+      <h3>h3 Heading</h3>
+      <h4>h4 Heading</h4>
+      <h5>h5 Heading</h5>
+      <h6>h6 Heading</h6>
+      <h7>h7 Heading</h7>
+      <p>p Paragraph</p>
+    </div>
+    <div>
+      <!-- Download File -->
+      <a
+        href="../Directory/Files/Yamini Sharma Resume.pdf"
+        download="yaminiresume"
+        alt="resume"
+        >Download Resume</a
+      >
+      <br />
+      <!-- Send Mail -->
+      <a href="mailto:codefive3040@gmail.com">Send Mail to Code</a>
+      <br />
+      <!-- Call Someone -->
+      <a href="tel:+917732995856">Call Tuk Tuk</a>
+      <br />
+      <!-- Go to Second Paragraph -->
+      <a href="#firstpara">Go to First Paragraph</a>
+    </div>
+    <div>
+      <!-- Unordered List|| Random Order -->
+      <ul>
+        <li>Mango</li>
+        <li>Elephant</li>
+        <li>Pineapple</li>
+        <li>Tortoise</li>
+      </ul>
+      <!-- Ordered List -->
+      <ol>
+        <li>Boil Water</li>
+        <li>Put Tea Bag</li>
+        <li>Put Sugar</li>
+        <li>Put Milk</li>
+        <li>Enjoy!</li>
+      </ol>
+      <!-- Description List -->
+      <dl>
+        <dt>Elephant</dt>
+        <dd><b>Elephants</b> are the largest land mammals.</dd>
+        <dt>Giraffe</dt>
+        <dd><strong>Giraffe</strong> is a large African hoofed mammal.</dd>
+        <dt>Tortoise</dt>
+        <dd><em>Tortoise</em> is a cute reptile.</dd>
+      </dl>
+    </div>
+    <div>
+      <!-- Mathematical Terms: Power &  Base -->
+      <p>Superscript: 10<sup>5</sup></p>
+      <p>Subscript: H<sub>2</sub>O</p>
+      <pre>
+        Pre 
+                Tag
+                         Using
+                                    Meri
+                                                Marzi   du tu du tu du tu du tu du tu tu tu 
+      </pre>
+    </div>
+    <div>
+      <!-- Table -->
+      <table>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Class</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Anitta</td>
+          <td>Third</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Picasa</td>
+          <td>Third</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnikCPCyUyxDAe7XFoadQREdDKZT24WK4Jvw&usqp=CAU"
+        alt="Elephant"
+      />
+    </div>
+    <div style="background-color: aqua">
+      This is Block Element taking full screen width using First div tag
+    </div>
+    <div style="background-color: darkcyan">
+      This is Second div taking another line
+    </div>
+    <span style="background-color: hotpink">
+      This is Inline Element taking only required width using First span tag
+    </span>
+    <span style="background-color: deeppink">
+      This is Second span going in same line
+    </span>
+    <div style="display: inline; background-color: lightgreen">
+      Converting div from Block -> Inline Element
+    </div>
+    <span style="display: block; background-color: yellow">
+      Converting span from Inline -> Block Element
+    </span>
+    <div>
+      <nav>
+        <ul>
+          <li style="display: inline"><a href="">Home</a></li>
+          <li style="display: inline"><a href="">Navigate</a></li>
+          <li style="display: inline"><a href="">About</a></li>
+          <li style="display: inline"><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <table border="1">
+        <thead>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td colspan="3">Chandler Bing</td>
+            <!-- <td>21</td> -->
+            <!-- <td>Male</td> -->
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ken Adams</td>
+            <td>24</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Phoebe Buffay</td>
+            <td rowspan="2">23</td>
+            <td rowspan="2">Female</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Monica Geller</td>
+            <!-- <td>23</td> -->
+            <!-- <td>Female</td> -->
+          </tr>
+        </tbody>
+        <tfoot>
+          <th colspan="2">Number of Males</th>
+          <th>=</th>
+          <th>1</th>
+        </tfoot>
+      </table>
+      <div>
+        <!-- Emmet Shortcuts -->
+        <h3>Emmet Code Shortcuts</h3>
+        <p>table>tr>th*3</p>
+        <p>article+section</p>
+        <p>h4{this is emmet for textual content insertion}</p>
+        <p>ul>li.item$*3</p>
+        <!-- Heading code using Emmet -->
+        <p>h${h$ heading}*6</p>
+        <p>h$[title=item$]{h$ heading}*6</p>
+        <p>ul>li.item$@3*4</p>
+        <p>div.first#container</p>
+        <p>table>(tr>td*2)*2</p>
+      </div>
+    </div>
+    <h3 id="firstpara">First Paragraph</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+      inventore odio voluptatum temporibus ipsam id voluptatem ab optio cum enim
+      ut hic natus, earum autem delectus facilis vel dolor, cupiditate quas
+      officiis iure vero fugiat. Inventore neque, molestiae quo mollitia
+      reiciendis amet laboriosam nulla quis ducimus adipisci eveniet nam
+      provident. Sint veniam cupiditate numquam qui, quasi, optio suscipit
+      laudantium consectetur officiis recusandae voluptates? Alias accusamus
+      labore expedita voluptate quas nostrum itaque reprehenderit incidunt
+      dolores et numquam facere, consectetur cupiditate id maxime rerum tenetur
+      dicta autem placeat quasi! Ut cumque eum est culpa molestiae, maiores
+      ducimus in ipsum atque odio, nihil esse reiciendis, deserunt inventore
+      accusantium libero odit vero sequi voluptatum? Itaque molestiae iste
+      dolorem, ullam sed labore? Eos maxime quaerat saepe culpa excepturi
+      architecto. Dolorem sapiente asperiores amet officia cumque aspernatur
+      repellendus necessitatibus fugit eius doloribus odio totam, optio,
+      corporis eos rerum cum numquam molestiae ipsam esse. Veritatis quasi, nam
+      quas dolore asperiores officia repudiandae tempora ad sequi laborum nulla
+      aliquid. Dicta, doloribus delectus esse quasi, voluptates mollitia hic
+      eligendi aperiam laborum repellendus tempora dolores nisi, expedita
+      commodi sint consequatur officiis. Quidem dolor a adipisci eos dicta
+      maxime tenetur quod pariatur nulla at fugit iusto voluptatum cumque esse,
+      saepe ea excepturi quibusdam explicabo laboriosam suscipit quis similique
+      soluta consequuntur. Repudiandae quos molestiae vel in necessitatibus,
+      sit, tempore cum voluptatum iure eos exercitationem fuga cumque quas
+      adipisci ad nostrum recusandae sunt nam delectus impedit ipsa vitae.
+      Repellat necessitatibus itaque hic nesciunt exercitationem animi quae
+      officia adipisci beatae ad nobis ullam quas ex excepturi totam,
+      consequatur voluptate. Tempora ut deserunt maiores corporis? Impedit
+      quisquam dolore cum doloremque expedita atque voluptatem sed possimus
+      voluptas magnam illum, similique corrupti qui cupiditate. Error iusto
+      asperiores, inventore consequatur minima doloribus pariatur nam, sequi hic
+      quae rem eius molestias. Mollitia rerum nisi quaerat delectus nobis
+      aliquam, atque aspernatur odit eaque. Enim earum molestias distinctio
+      molestiae libero harum totam placeat impedit repellendus veritatis a
+      necessitatibus consectetur tempora et nobis quas at nemo, cum, assumenda
+      pariatur atque fugiat ad eligendi fugit! Atque perspiciatis dolorem eaque
+      illum, totam similique repellat ipsam maiores, eligendi distinctio tempora
+      architecto vero earum deserunt ratione corporis, incidunt amet?
+      Consequatur mollitia, quibusdam aliquid rerum cupiditate corrupti omnis ab
+      similique dignissimos explicabo! Suscipit aut culpa placeat, expedita
+      ipsam consequuntur ullam voluptas, amet exercitationem, labore fugit. Ad
+      itaque commodi aut quas blanditiis impedit nam facilis fugiat eum unde.
+      Incidunt inventore illum animi fugiat aperiam natus aliquid voluptatum
+      consequatur eveniet minima. Voluptatum, ab maiores. Exercitationem
+      deserunt distinctio delectus, quos, sequi ad nesciunt quibusdam, officiis
+    </p>
+  </body>
+</html>

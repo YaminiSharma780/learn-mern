@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS 1</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../CSS/notes2.css" />
+    <!-- Internal CSS -->
+    <style>
+      /* By Default there is some padding and margin which we should keep 0 and applu later in the css ac to our needs */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #para2 {
+        background-color: pink;
+      }
+    </style>
+    <!-- Importing Google Fonts single library :: Caprasimo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: lightyellow">
+    <h1>Learn CSS</h1>
+    <span id="span">SPAN TAG :::: Welcome! Start your journey to learn CSS from here</span>
+    <!-- Inline CSS -->
+    <p style="background-color: aqua">
+      Inline CSS :::: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Doloribus repellendus voluptatibus id, ratione tempora quia fugiat
+      similique cumque omnis, alias, laudantium vel. Eum illum ratione veniam,
+      quos amet recusandae laudantium enim neque blanditiis excepturi! Tempore
+      esse dolor atque repellendus aspernatur.
+    </p>
+    <!-- Internal CSS -->
+    <p id="para2">
+      Internal CSS :::: Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Harum illo magni quia ea dicta voluptas commodi. Libero, rem. Quia,
+      esse repudiandae totam nam dolorum in, ipsum atque ea quibusdam neque
+      error.
+    </p>
+    <!-- External CSS -->
+    <p id="para3" class="paraClass3">
+      External CSS :::: Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Quia impedit consequuntur voluptate nam libero animi, in quaerat
+      est, reprehenderit eaque nemo tenetur.
+    </p>
+    <p class="paraClass4">
+      Using p.paraClass4{} Selector :::: Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Illo obcaecati velit saepe tenetur nobis voluptas, dicta
+      enim voluptatem totam vitae, incidunt eum officiis soluta error pariatur
+      libero numquam, harum laborum.
+    </p>
+    <article class="articleClass">
+      Article :::: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Debitis alias ipsam aliquam optio. Ad, tempore excepturi fugiat eaque
+      laboriosam consequuntur.
+    </article>
+    <br><br>
+    <!-- Div without {padding:20px; box-sizing: border-box;} -->
+    <div id="div1">
+      Div without padding :::: Lorem ipsum dolor
+    </div>
+    <!-- Div with {padding:20px; box-sizing: border-box;} -->
+    <div id="div2">
+      Div with padding :::: Lorem ipsum dolor
+    </div>
+    <br><br><br><br>
+    <!-- Span with display:inline; -->
+    <div>
+      <span class="span1">
+        Span with display:inline;
+      </span>
+      <span class="span1">
+        Span with display:inline;
+      </span>
+    </div>
+    <!-- Span with display:inline-block; -->
+    <div>
+      <span class="span2">
+        Span with display:inline-block;
+      </span>
+      <span class="span2">
+        Span with display:inline-block;
+      </span>
+    </div>
+    <!-- Span with display:block; -->
+    <div>
+      <span class="span3">
+        Span with display:block;
+      </span>
+      <span class="span3">
+        Span with display:block;
+      </span>
+    </div>
+  </body>
+</html>

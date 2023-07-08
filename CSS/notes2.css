@@ -1,0 +1,96 @@
+/* Priority Order of CSS Style : Inline > Internal > External */
+/* Priority Order of Selector : ID > Class > Element */
+#para3 {
+  background-color: crimson;
+}
+.paraClass3 {
+  background-color: rgb(169, 21, 117);
+  text-align: center;
+}
+p {
+  background-color: rgb(240, 219, 229);
+  /* Use !important to increase priority of External CSS to highest */
+  /* background-color: greenyellow !important; */
+}
+p.paraClass4 {
+  background-color: rgba(245, 229, 9, 0.75);
+  font-weight: bold;
+  color: #1307f8;
+}
+.articleClass {
+  background-color: hsla(205, 89%, 47%, 0.604);
+  font-size: large;
+  font-weight: bold;
+  line-height: 50px;
+  /* Imprted Google Fonts Caprasimo */
+  font-family: "Caprasimo", cursive;
+}
+h1 {
+  text-align: center;
+  background-color: aquamarine;
+  /* border-color: blue;
+    border-width: 2px;
+    border-style: solid; */
+  border: black 2px solid;
+  border-radius: 4px;
+  width: 300px;
+  /* Differentiate Margin with Content :: Margin will shift content from left to right by 100px */
+  margin-left: 100px;
+  /* Differentiate Padding with Content :: Padding will take internal space by 20px*/
+  padding: 20px;
+  background-clip: content-box, padding-box;
+}
+#span {
+  background-color: aquamarine;
+  border: black 2px solid;
+  border-radius: 4px;
+  font-size: large;
+  font-weight: bold;
+  line-height: 50px;
+  font-family: fantasy;
+  /* Won't work */
+  /* height: 500px;
+    width: 300px; */
+  /* height and width will work after display property :::: display: inline-block */
+  display: block;
+}
+#div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  color: red;
+}
+#div2 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  color: green;
+  /* Padding is causing the box to increase the Box Size */
+  padding: 20px;
+  /* Margin won't do the same thing as Padding */
+  /* margin: 20px; */
+  /* box-sizing: border-box; is used to stop the Padding to increase Box Size
+  and shrink the content size */
+  box-sizing: border-box;
+}
+.span1{
+  height: 100px;
+  width: 400px;
+  border: 2px solid black;
+  background-color: lightgreen;
+  display: inline;
+  }
+.span2{
+  height: 100px;
+  width: 400px;
+  border: 2px solid black;
+  background-color: lightpink;
+  display: inline-block;
+  }
+.span3{
+  height: 100px;
+  width: 400px;
+  border: 2px solid black;
+  background-color: lightsteelblue;
+  display: block;
+  }

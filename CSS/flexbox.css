@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Box and Item with display:flex */
+.box{
+    display: flex;
+    /* Responsible to align items in row/column/row-reverse/column-reverse */
+    /* flex-direction: row-reverse; */
+    /* To adjust box according to screen size */
+    /* flex-wrap: wrap; */
+    /* Need to identify what flex-flow:wrap actually does */
+    /* flex-flow:wrap; */
+    /* Place items a/c to the main axis [row]*/
+    /* justify-content:space-between; */
+    /* Place items a/c to the cross axis [column]*/
+    /* align-items:flex-end; */
+    /* Stretch items a/c to the cross axis [column] only visble after removing height from .item*/
+    /* align-items:stretch; */
+    /* When we use flex-wrap:wrap then in small screen we will get space between 1st and 2nd line
+    To avoid space we use align-content */
+    /* align-content: start; */
+    border: 4px solid black;
+    background-color: lightcyan;
+    margin: 10px;
+    height: 1000px;
+    /* Only justify-content & align-content have 
+    space-around / space-between / space-evenly property*/
+    /* justify-content: space-evenly;
+    align-content: space-between; */
+}
+.item{
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 4px;
+}
+#item1{
+    background-color: red;
+    /* order will change the order of items */
+    /* order: 4; */
+    /* Due to flex-shrink box1 will shrink 4 times faster than other boxes */
+    /* flex-shrink: 4; */
+    /* Due to flex-grow box1 will take remaining space of the row */
+    /* flex-grow: 1; */
+    /* Due to flex-basis width of box will set to 400px */
+    /* flex-basis: 400px; */
+    /* Due to align-self item will align itself a/c to opposite direction of flex-direction */
+    /* align-self: center; */
+}
+#item2{
+    background-color: blue;
+    /* order: 1; */
+}
+#item3{
+    background-color: green;
+    /* order: -1; */
+}
+#item4{
+    background-color: yellow;
+    /* order: 2; */
+}
+@media (min-width:600px) {
+    .box{
+        flex-direction: row;
+    }
+}
+@media (max-width:600px) {
+    .box{
+        flex-direction: column;
+    }
+}

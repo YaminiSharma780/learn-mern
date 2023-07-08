@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Box and Item Implementation */
+.box{
+    display: flex;
+    border: 4px solid black;
+    background-color: lightcyan;
+}
+.item{
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 4px;
+}
+#item1{
+    background-color: red;
+}
+#item2{
+    background-color: blue;
+}
+#item3{
+    background-color: green;
+}
+#item4{
+    background-color: yellow;
+}
+/* max-width works for 0px-600px */
+/* min-width works for 600px-5000px */
+@media (min-width:600px) {
+    .box{
+        flex-direction: row;
+    }
+}
+@media (max-width:600px) {
+    .box{
+        flex-direction: column;
+    }
+}
+
+
