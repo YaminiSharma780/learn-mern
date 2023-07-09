@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* First Method of declaring custom variables */
+    --shadow-color:rgb(17, 105, 101); 
+}
+/* Second Method of declaring custom variables */
+:root{
+    --box-height:150px;
+    --box-width:150px;
+}
+h1{
+    /* text-shadow: [x-offset] [y-offset] [radius] [color]*/
+    /* text-shadow: 5px 5px 1px rgb(55, 55, 55); */
+    /* text-shadow: [color] [x-offset] [y-offset] [radius] */
+    text-shadow: yellow 5px 5px 3px;
+}
+.container{
+    display: flex;
+    background-color: rgb(179, 238, 235);
+    border: 4px solid black;
+    padding:20px;
+}
+.box{
+    /* OUTSIDE shadow */
+    /* box-shadow: [left/right] [top/bottom] [blur] [spread] [shadow color]; */
+    box-shadow: 10px 10px 2px 4px var(--shadow-color);
+    /* outside shadow will not be visible when we use inset */
+    /* INSIDE shadow */
+    /* box-shadow: inset -5px -5px 3px 2px rgb(14, 84, 81); */
+    /* Two Shadows simultaneously */
+    /* box-shadow: 5px 5px rgb(19, 103, 99) ,15px 15px black; */
+    background-color: lightseagreen;
+    border: 2px solid black;
+    height: var(--box-height);
+    width: var(--box-width);
+    margin:40px;
+    padding: 10px;
+}
