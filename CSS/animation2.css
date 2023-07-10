@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    border: 10px solid whitesmoke;
+}
+#box1{
+  animation-name: box-right-move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* Box 1 */
+  position: relative;
+  width: 200px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  }
+  @keyframes box-right-move {
+    from{
+        top: 5px;
+        left: 0px;
+    }
+    to{
+        top: 5px;
+        left: 1150px;
+    }
+  }
+#circle1{
+  animation: 10s ease-in-out 0s infinite alternate none running circle-animation;
+  /* Circle 1 */
+  position: relative;
+  /* top: 150px;
+  left: 600px; */
+  top: 28%;
+  left: 48%;
+  width: 80px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+@keyframes circle-animation {
+ 0%{
+  top: 2%;
+  left: 70%;
+ }
+ 25%{
+  top: 57%;
+  left: 2%;
+ }
+ 50%{
+  top: 1%;
+  left: 30%;
+ }
+ 75%{
+  top: 57%;
+  left: 80%;
+ }
+ 100%{
+  top: 2%;
+  left: 2%;
+ }
+}
+#box2{
+  animation-name: box-left-move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* Box 2 */
+  position: relative;
+  width: 200px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+  @keyframes box-left-move {
+    from{
+        top: 360px;
+        left: 1150px;
+    }
+    to{
+        top: 360px;
+        left: 0px;
+    }
+  }

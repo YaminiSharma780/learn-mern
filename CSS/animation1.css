@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* To prevent the Container from getting overflow in x-direction */
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    border: 5px solid black;
+}
+#box1{
+    animation-name: box-right-move;
+    /* animation-duration -> Specifies the length of time in which an animation completes one cycle. */
+    animation-duration: 4s;
+    /* animation-iteration-count -> Specifies the number of times an animation should repeat.; */
+    animation-iteration-count: infinite; 
+    animation-delay: 2s;
+    /* animation-timing-function -> Decides if object will start slow/fast and end slow/fast */
+    animation-timing-function: linear;
+    /* animation-direction -> Decides where animation should occuer after ending
+    alternate will make the ball move here and there */
+    animation-direction: alternate;
+    /* animation-fill-mode -> Decides what the object will do after animation ends 
+    by overriding the animation*/
+    animation-fill-mode: forwards;
+    /* Circle */
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    background-image: linear-gradient(to bottom right, black, rgb(91, 90, 90));
+    /* Make a circle with border-radius: 50%; */
+    border-radius: 50%;
+  }
+#shadow1{
+    animation-name: box-right-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* animation-fill-mode: none|forwards|backwards|both|initial|inherit; */
+    animation-fill-mode: forwards;
+    /* Shadow Circle */
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background-image: radial-gradient(black,grey, rgb(242, 235, 235));
+    border-radius: 50%;
+  }
+  @keyframes box-right-move {
+    from{
+        top: 0px;
+        left: 0px;
+    }
+    to{
+        top: 0px;
+        left: 1150px;
+    }
+  }
+#box2{
+    animation-name: box-left-move;
+    /* animation-duration -> Specifies the length of time in which an animation completes one cycle. */
+    animation-duration: 4s;
+    /* animation-iteration-count -> Specifies the number of times an animation should repeat.; */
+    animation-iteration-count: infinite; 
+    animation-delay: 2s;
+    /* animation-timing-function -> Decides if object will start slow/fast and end slow/fast */
+    animation-timing-function: linear;
+    /* animation-direction -> Decides where animation should occuer after ending
+    alternate will make the ball move here and there */
+    animation-direction: alternate;
+    /* animation-fill-mode -> Decides what the object will do after animation ends 
+    by overriding the animation*/
+    animation-fill-mode: forwards;
+    /* Circle */
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    /* background-image: linear-gradient(to bottom right, black, rgb(91, 90, 90)); */
+    /* Make a circle with border-radius: 50%; */
+    border-radius: 50%;
+}
+#shadow2{ 
+    animation-name: box-left-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* animation-fill-mode: none|forwards|backwards|both|initial|inherit; */
+    animation-fill-mode: forwards;
+    /* Shadow Circle */
+    position: relative;
+    width: 200px;
+    height: 5px;
+    background-image: radial-gradient(red,rgb(243, 100, 11), yellow);
+    border-radius: 50%;
+  }
+  @keyframes box-left-move {
+    from{
+        top: 180px;
+        left: 1150px;
+    }
+    to{
+        top: 180px;
+        left: 0px;
+    }
+  }
