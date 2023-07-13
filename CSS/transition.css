@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#box1{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1px;
+    /* Transition Box 1 */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+#box1:hover{
+    width: 200px;
+    height: 600px;
+    margin: 0px;
+    background-color: rgb(159, 137, 239);
+}
