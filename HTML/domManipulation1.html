@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading1">Welcome</h1>
+        <p class="para" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ea!</p>
+        <p class="para" id="para2">Ratione, ea! ipsum dolor sit amet consectetur adipisicing elit</p>
+        <script type="text/javascript">
+            // 1
+            document.getElementById("heading1").innerHTML = "Haha Dude";
+            // 2
+            const test = document.getElementsByClassName("para");
+            test[0].innerHTML = "Hello World";
+            // 3
+            // var paragraphs = document.getElementsByTagName("p")
+            // alert("Message in this para is :::: ", +paragraphs[0].innerText);
+            // document.getElementById("para1").innerText = "You are done dude"
+        </script>
+    </div>
+</body>
+</html>
