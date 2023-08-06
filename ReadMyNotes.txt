@@ -1,0 +1,19 @@
+1. HTML
+    Use [!] to get Boiler Plate of HTML.
+    Run HTML by clicking on Liver Server at the bottom.
+
+2. CSS
+    Use [!css] to get boiler Plate of CSS
+    Insert CSS file in Head Section of HTML
+
+3. JS
+    Insert JS file in HTML after body tag ends using <script src=""></script>
+
+4. GIT
+    git status
+    git init
+    git add .
+    git commit -m "my message"
+    git log
+    git remote -v
+    git push -u origin master

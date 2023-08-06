@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(74, 7, 246);
+  background-color: transparent;
+}
+
+.headerContainer {
+  overflow-x: none;
+}
+
+.navContainer {
+  width: 100vw;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(166, 52, 210, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#navList {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brandName {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#navItems {
+  color: white;
+  font-size: large;
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  width: 100vw;
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      rgba(244, 244, 111, 0.269),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("recipeBG.avif");
+    background-size: cover;
+  /* background: rgb(245, 213, 226);
+    background: linear-gradient(
+      90deg,
+      rgb(245, 220, 230) 0%,
+      rgb(196, 217, 242) 100%
+    ); */
+}
+
+.contentBox {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* width: 1349px; */
+  width: 70%;
+  /* border: 2px solid black; */
+  box-shadow: 4px 4px 30px black;
+  margin: auto;
+  background: rgb(246, 193, 215);
+  background: linear-gradient(
+    90deg,
+    rgb(245, 190, 213) 0%,
+    rgb(158, 194, 239) 100%
+  );
+}
+.rightBox{
+  overflow: hidden;
+  height: 350px;
+  width: 200px;
+  border-radius: 20px;
+}
+.rightBox img {
+  height: 350px;
+  width: 200px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  transition: all 0.2s linear 0s;
+}
+.rightBox img:hover{
+  transform: scale(1.1);
+}
+
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerContainer {
+  overflow-x: none;
+  width: 100vw;
+  color: whitesmoke;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(166, 52, 210, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

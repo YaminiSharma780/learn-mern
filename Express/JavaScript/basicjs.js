@@ -195,6 +195,20 @@
 
 //14 {Array Functions}
 // const menu = ["idli","dosa","halwa","kheer","barfi"];
+// concat()
+// const deserts = ["chocolate", "gajar-ka-halwa" ,"ice-cream"];
+// const starters = ["paneer", "machurian", "momos"];
+// console.log("New Menu = ",deserts.concat(starters));
+// delete operator
+// console.log(starters);
+// console.log(starters.length);
+// delete starters[1];
+// console.log(starters);
+// console.log(starters.length);//delete never affects length of array
+// typeof()
+// console.log(typeof(menu),typeof(deserts),typeof(starters));//object object object
+// join()
+// console.log(menu.join(" & "));
 // // indexOf()
 // console.log("index of halwa ? ",menu.indexOf("halwa"));
 // // includes()
@@ -216,6 +230,9 @@
 // console.log("menu after sort() ",menu);
 // // slice()
 // console.log("slice(2, 4)", menu.slice(2, 4));
+// let arr = [6,34,7,596,3,5,24,2];
+// arr.sort();
+// console.log(arr);
 
 // 15 {Functions}
 // let val1 = 7;

@@ -53,5 +53,16 @@
       margin-top: 500px;
     "
   ></div>
+  <div>
+    <input type="button" id="btnClick" class="btnClickClass" value="Click Me">
+    <script
+    type="text/javascript">
+    // document.getElementById("btnClick").addEventListener("click",clicked);
+    document.getElementsByClassName("btnClickClass").addEventListener("click",clicked);
+    function clicked(){
+      alert("You have clicked me dude!");
+    }
+  </script>
+  </div>
 </body>
 </html>

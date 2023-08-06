@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+}
+
+/* Title: My JS Notes */
+#myTitle {
+    color: transparent;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-stroke: 4px black;
+    background: url(../Directory/Images/textBGImage1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* ARRAY OF TAGs */
+.box {
+    border: 2px solid black;
+}
+
+/* Cartoon Container */
+#cartoonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Mowgli */
+#mowgli{
+    height: 300px;
+    width: 300px;
+    /* Use for [https://bennettfeely.com/clippy/] clip-path */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+/* Shinchan */
+#shinchanContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 50%;
+    background: linear-gradient(purple, blue, green, yellow, orange, rgb(249, 8, 165));
+}
+
+#shinchan {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Doremon */
+#doremon {
+    height: 300px;
+    /* box-shadow: 10px 10px 20px black; */
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+/* BULB */
+#wiredbulb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#wire {
+    background-color: black;
+    width: 5px;
+    height: 100px;
+}
+
+#bulb {
+    border: 2px solid black;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+button {
+
+    height: 50px;
+    width: 100px;
+}
+
+/* BULB with single button */
+#bulbSwitch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#toggle {
+    background-color: blue;
+}
+
+/* BULB with two buttons */
+#bulbOnOff {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#on {
+    background-color: green;
+}
+
+#off {
+    background-color: red;
+}
+
+/* DOM MANIPULATION */
+.container {
+    border: 2px solid black;
+}

@@ -1,85 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="/Express/node-modules/event.js"></script>
-  </head>
-  <body style="background-color: #414141; color: aliceblue">
-    <h2>Alphabets</h2>
-    <div style="display: flex;">
-      <ul style="list-style: none;" id="alphabets">
-        <li>
-          <img
-            width="200px"
-            id="A"
-            src="/Directory/Images/random-image1.avif"
-            alt="loading"
-            onclick="alert('A click ho gya')"
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="B"
-            src="/Directory/Images/random-image2.jpg"
-            alt="loading"
-            onclick="alert('B click ho gya')"
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="C"
-            src="/Directory/Images/random-image3.jpg"
-            alt="loading"
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="D"
-            src="/Directory/Images/random-image4.jpg"
-            alt="loading"
-          />
-        </li>
-        <li>
-          <img
-            width="200px"
-            id="E"
-            src="/Directory/Images/random-image5.jpg"
-            alt="loading"
-          />
-        </li>
 
-        <li><a style="color: aliceblue" href="#" id="gfg">GeeksforGeeks</a></li>
-      </ul>
-    </div>
-    <script>
-        // Element Selector
-      document.getElementById("C").onclick = function (e) {
-        e.stopPropagation();//will stop propogation for C and now we will not get Parent "List is clicked"
-        alert("C is clicked dude");
-      };
-      document.getElementById("D").addEventListener("click", function (e) {
-        console.log(e);
-        alert("D is clicked dude");
-      });
-      document.getElementById("gfg").addEventListener("click", function (e) {
-        console.log(e.target); //give output the html code of anchor tag with id = gfg
-      });
-      // LIST 
-    //   document.getElementById("alphabets").addEventListener("click",function(e){
-    //     e.stopPropagation();//when true it will stop every object on the screen to show their alerts 
-    //     alert("List is clicked");
-    //   },true);//when true is written here alert will come P -> C, if false C -> P //Event Bubbling
-      // Query Selector
-      document.querySelector('#alphabets').addEventListener("click",function(e){
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event</title>
+  <script src="/Express/node-modules/event.js"></script>
+</head>
+<style>
+  .smallContainer {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: rgb(20, 19, 19);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#bigContainer {
+    padding: 10px;
+    width: 900px;
+    background-color: rgb(117, 241, 143);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+  }
+</style>
+
+<body style="background-color: #414141; color: aliceblue">
+  <h2>Alphabets</h2>
+  <div id="bigContainer">
+    <div class="smallContainer" id="A" onclick="alert('A click ho gya')">A</div>
+    <div class="smallContainer" id="B" onclick="alert('B click ho gya')">B</div>
+    <div class="smallContainer" id="C">C</div>
+    <div class="smallContainer" id="D">D</div>
+    <div class="smallContainer" id="E">E</div>
+    <div><a style="font-weight: bold; color: black" href="#" id="gfg">GeeksforGeeks</a></div>
+  </div>
+  <script>
+    // Bubbling vs Capture Concept in JS
+    document.getElementById("C").onclick = function (e) {
+      e.stopPropagation(); //will stop propogation for C and now we will not get Parent "Parent Container is clicked dude"
+      alert("C is clicked dude");
+    };
+    document.getElementById("D").addEventListener("click", function (e) {
+      console.log(e);
+      alert("D is clicked dude");
+    });
+    document.getElementById("gfg").addEventListener("click", function (e) {
+      console.log(e.target); //give output the html code of anchor tag with id = gfg
+    });
+    // LIST
+      document.getElementById("bigContainer").addEventListener("click",function(e){
+        // e.stopPropagation();//when true it will stop every object on the screen to show their alerts
+        alert("Parent Container is clicked dude");
+      },true);//when true is written here alert will come P -> C, if false C -> P //Event Bubbling
+    // Query Selector
+    document
+      .querySelector("#bigContainer")
+      .addEventListener("click", function (e) {
         e.stopPropagation();
-        alert("List through Query Selector");
+        alert("Parent Container click ho gya");
       });
       //Query Selector vs Element Selector ??
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
