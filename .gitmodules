@@ -1,0 +1,3 @@
+[submodule "learn-mern"]
+	path = learn-mern
+	url = https://github.com/YaminiSharma780/learn-mern.git
