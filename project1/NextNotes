@@ -1,0 +1,5 @@
+1. To create new app : npx create-next-app
+2. Enter your app name.
+3. Select : NO -> No -> Yes -> No -> Yes
+4. To Run the app : npm run dev
+5. Use 'rafce' to get the arrow function Component's snippet.
